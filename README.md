@@ -1,7 +1,7 @@
 # Spok Compressor 0.2 — Dual Channel FET Compressor / Limiter -  tube output  :)
 
 <p align="center">
-  <strong>Full analog FET compressor / limiter. EI Niš EL34 tube output.</strong>
+  <strong>VST3 analog FET compressor / limiter. EI Niš EL34 tube output.</strong>
 </p>
 
 <p align="center">
