@@ -146,7 +146,7 @@ This plug-in is free to use. A donation keeps the work going: new features, fixe
 
 Copyright (C) 2026 Srdjan Stojkovic. All rights reserved.
 
-Spok Compressor is the author's own work. It is free of charge. It is not licensed under the GPL. Copying, redistribution and modification are not permitted. It comes with absolutely no warranty.
+Spok Compressor is the author's own work. Copying, redistribution and modification are not permitted. It comes with absolutely no warranty.
 
 ---
 
