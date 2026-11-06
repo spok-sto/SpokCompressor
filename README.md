@@ -34,17 +34,14 @@
 
 ## What's new in 0.2
 
-- Dual channel FET compressor / limiter with an EI Niš EL34 tube output
 - 20 factory presets for vocal, bass, drums, guitar and bus
 
 ---
 
 ## Why Spok Compressor?
 
-A FET compressor is fast, and it colors the sound while it controls it. Spok Compressor follows that path: a feedback FET gain cell, then a real tube stage instead of a clean line amp.
-
-The EL34 is the EI Niš power pentode used in Spok Quantum. Turning **Tube** up drives the pentode and the output transformer
-At zero it stays close to clean. The detector still listens after that stage, so the tube and the output knob sit inside the compression loop.
+A FET compressor is fast, and it colors the sound while it controls it. Spok Compressor follows that path: a feedback FET gain cell, then a real tube stage.
+The EL34 is the EI Niš power pentode used in Spok Quantum. Turning **Tube** up drives the pentode and the output transformer.
 
 - **Fast enough for drums and vocals** — attack from 20 to 800 microseconds
 - **Ratios of a classic limiter** — 4:1, 8:1, 12:1, 20:1, and All
