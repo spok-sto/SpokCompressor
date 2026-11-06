@@ -151,7 +151,7 @@ Spok Compressor is the author's own work. It is free of charge. It is not licens
 ---
 
 <p align="center">
-  <em>Enjoy the sound. Support the passion.</em>
+  <em>Enjoy the sound. Support the passion. Studenti su pobedili ;) </em>
 </p>
 
 <p align="center">
