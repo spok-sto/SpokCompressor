@@ -151,7 +151,7 @@ This plug-in is free to use. A donation keeps the work going: new features, fixe
 
 **Design & Programming:** Srdjan Stojkovic — Serbia, 2026 — [spok@konekt.rs](mailto:spok@konekt.rs)
 
-Copyright (C) 2026 Srdjan Stojkovic. All rights reserved.
+Copyright (C) 2025.-2026. Srdjan Stojkovic. All rights reserved.
 
 Spok Compressor is the author's own work. Copying, redistribution and modification are not permitted. It comes with absolutely no warranty.
 
