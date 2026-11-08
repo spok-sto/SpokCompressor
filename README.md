@@ -124,6 +124,13 @@ An external sidechain key replaces the detector feed. The sidechain high-pass (3
 
 ---
 
+## Download 
+
+Download the latest ready-to-use version of the plugin using the links below. 
+https://github.com/spok-sto/SpokCompressor/archive/refs/heads/main.zip
+
+---
+
 ## Feedback
 
 If you use Spok Compressor, share your thoughts and bug reports:
