@@ -1,4 +1,4 @@
-# Spok Compressor 0.2 — Dual Channel FET Compressor / Limiter -  tube output  :)
+# Spok Compressor 0.3 — Dual Channel FET Compressor / Limiter -  tube output  :)
 
 <p align="center">
   <strong>VST3 analog FET compressor / limiter. EI Niš EL34 tube output.</strong>
@@ -26,15 +26,21 @@
 
 <p align="center">
   <a href="docs/SpokCom.png">
-    <img src="docs/SpokCom.png" alt="Spok Compressor 0.2 — dual channel FET compressor with EI Niš EL34 tube output" width="100%">
+    <img src="docs/SpokCom.png" alt="Spok Compressor 0.3 — dual channel FET compressor with EI Niš EL34 tube output" width="100%">
   </a>
 </p>
 
 https://www.youtube.com/watch?v=0rJou21Gxoo
+
 ---
 
-## What's new in 0.2
+## What's new in 0.3
 
+- 1176LN Rev D FET front end and an EI Niš EL34 Class-A push-pull output, one output transformer
+- DET switch: FET before the tube, or TUBE after the EL34 pair and the output transformer
+- OUTPUT is the last level control. It sits outside both detector taps
+- TRIM is gone. MIX is the wet/dry control
+- New faceplate knobs
 - 20 factory presets for vocal, bass, drums, guitar and bus
 
 ---
@@ -62,10 +68,11 @@ Input
   ▼
 [01] INPUT  →  input transformer
 [02] FET GAIN CELL  (feedback, program-dependent gain reduction)
-     └── preamp  
-[03] OUTPUT  →  EI NIŠ EL34  →  output transformer
-     └── the detector listens here, so Tube and Output are inside the loop
-[04] MIX with the dry signal, then TRIM
+     └── preamp
+     └── DET FET listens here
+[03] EI NIŠ EL34 CLASS-A PUSH-PULL  →  output transformer
+     └── DET TUBE listens here
+[04] OUTPUT  →  MIX
 ```
 
 An external sidechain key replaces the detector feed. The sidechain high-pass (30–300 Hz) is on the detector only. The audio path keeps its low end.
@@ -74,7 +81,7 @@ An external sidechain key replaces the detector feed. The sidechain high-pass (3
 
 <p align="center">
   <a href="docs/com_output.png">
-    <img src="docs/com_output.png" alt="Compression curves: output against input for 4:1, 8:1, 12:1, 20:1 and limiting off" width="100%">
+    <img src="docs/com_output.png" alt="Compression curves for DET FET and DET TUBE: 4:1, 8:1, 12:1, 20:1, All and limiting off" width="100%">
   </a>
 </p>
 
@@ -84,13 +91,13 @@ An external sidechain key replaces the detector feed. The sidechain high-pass (3
 
 | | Module | What it delivers |
 |---|---|---|
-| **01 / Input and Output** | Per channel. Output sits inside the feedback loop |
+| **01 / Input and Output** | Per channel. Output is outside both detector taps |
 | **02 / Attack and Release** | 20–800 µs attack, 50 ms–1.1 s release. Clockwise is faster |
 | **03 / Ratio** | 4:1, 8:1, 12:1, 20:1, and All |
-| **04 / EI Niš EL34** | Tube drive and output-transformer|
+| **04 / EI Niš EL34** | Class-A push-pull pair, tube drive and output transformer |
 | **05 / Link** | Stereo (controls and detectors linked), A>AB, or A\|B dual mono |
 | **06 / Sidechain** | High-pass 30–300 Hz on the detector, plus an external key input |
-| **07 / Mix and Trim** | Parallel mix, then ±18 dB trim after the mix |
+| **07 / Mix** | Wet/dry mix after the output |
 | **08 / Meters** | VU per channel: gain reduction, +4, or +8 |
 | **20 Factory Presets** | Vocal, bass, drums, guitar, and bus |
 
@@ -99,11 +106,11 @@ An external sidechain key replaces the detector feed. The sidechain high-pass (3
 
 | Category | Presets |
 |---|---|
-| **Vocal** | Lead Vocal (CLA) · Lead Vocal (Dr. Pepper) · Vocal Tracking (Greg Wells) · Vocal In Your Face · Vocal Rehab (Elmhirst) |
-| **Bass** | Bass Classic · Bass Growl · Bass Grit |
-| **Drums** | Snare Crack · Kick Punch · Overheads Control · Drum Bus Parallel (All Buttons) · Room Nuke · Drum Bus Glue |
+| **Vocal** | Lead Vocal (CLA) · Lead Vocal (Dr. Pepper) · Vocal Tracking (Greg Wells) · Vocal In Your Face · Vocal Limiter (12:1) |
+| **Bass** | Bass Classic · Bass Tight (Chiccarelli 8:1) · Bass Growl (20:1) |
+| **Drums** | Snare Crack · Kick Punch (Rev D) · Overheads Control · Drum Bus Parallel (All Buttons) · Room Nuke · Drum Bus Glue |
 | **Guitar** | Electric Guitar Heft · Acoustic Guitar |
-| **Bus & Utility** | Stereo Bus Gentle · Limiter 20:1 · Color Only |
+| **Bus & Utility** | Stereo Bus (Scheps Glue) · Limiter 20:1 · Color Only |
 | **Init** | Init |
 
 ---
@@ -119,14 +126,19 @@ An external sidechain key replaces the detector feed. The sidechain high-pass (3
 | **Latency** | 35 samples at 44.1 / 48 kHz, 23 samples from 88.2 kHz|
 | **Attack** | 20–800 µs |
 | **Release** | 50 ms–1.1 s |
-| **Tube** | EI Niš EL34|
+| **Tube** | EI Niš EL34, Class-A push-pull |
+| **Detector** | FET (preamp tap) or TUBE (after EL34 and the output transformer) |
 | **Sidechain** | External key bus, detector high-pass 30–300 Hz |
 
 ---
 
 ## Download 
 
-Download the latest ready-to-use version of the plugin using the links below. 
+Download the latest ready-to-use version of the plugin using the links below.
+
+- [macOS, Apple Silicon and Intel](https://github.com/spok-sto/SpokCompressor/raw/main/Spok-Compressor-0.3.0-macOS.pkg)
+- [Windows x64](https://github.com/spok-sto/SpokCompressor/raw/main/Spok-Compressor-0.3.0-Windows-Setup.zip)
+
 https://github.com/spok-sto/SpokCompressor/archive/refs/heads/main.zip
 
 ---
