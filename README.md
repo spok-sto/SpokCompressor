@@ -36,19 +36,20 @@ https://www.youtube.com/watch?v=0rJou21Gxoo
 
 ## What's new in 0.3
 
-- 1176LN Rev D FET front end and an EI Niš EL34 Class-A push-pull output, one output transformer
+- DSP Improvements
 - DET switch: FET before the tube, or TUBE after the EL34 pair and the output transformer
-- OUTPUT is the last level control. It sits outside both detector taps
-- TRIM is gone. MIX is the wet/dry control
-- New faceplate knobs
-- 20 factory presets for vocal, bass, drums, guitar and bus
+- UI/UX Improvements
+ 
+
 
 ---
 
 ## Why Spok Compressor?
 
-A FET compressor is fast, and it colors the sound while it controls it. Spok Compressor follows that path: a feedback FET gain cell, then a real tube stage.
-The EL34 is the EI Niš power pentode used in Spok Quantum. Turning **Tube** up drives the pentode and the output transformer.
+A FET compressor is known for its ultra-fast response, punch, and distinctive analog coloration. Spok Compressor follows this philosophy, 
+combining a 1176LN Rev D1970. FET front end with a feedback gain-reduction topology and a custom-modeled EI Niš EL34 Class-A push-pull tube output stage driving a single output transformer.
+The EL34 is the legendary EI Niš power pentode also modeled in Spok Quantum. Increasing the Tube control drives the simulated EL34 push-pull stage and output transformer harder, introducing rich harmonic saturation, warmth, and analog character.
+The result is a combination of fast vintage FET compression and the harmonic richness of a classic tube amplifier, recreated through custom nonlinear DSP modeling.
 
 - **Fast enough for drums and vocals** — attack from 20 to 800 microseconds
 - **Ratios of a classic limiter** — 4:1, 8:1, 12:1, 20:1, and All
@@ -135,9 +136,6 @@ An external sidechain key replaces the detector feed. The sidechain high-pass (3
 ## Download 
 
 Download the latest ready-to-use version of the plugin using the links below.
-
-- [macOS, Apple Silicon and Intel](https://github.com/spok-sto/SpokCompressor/raw/main/Spok-Compressor-0.3.0-macOS.pkg)
-- [Windows x64](https://github.com/spok-sto/SpokCompressor/raw/main/Spok-Compressor-0.3.0-Windows-Setup.zip)
 
 https://github.com/spok-sto/SpokCompressor/archive/refs/heads/main.zip
 
